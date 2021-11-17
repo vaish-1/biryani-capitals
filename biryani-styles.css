@@ -1,0 +1,292 @@
+/* CSS reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Css Variables*/
+:root {
+  navbar-height: 50px;
+}
+
+body {
+  background-color: #FDF6F0;
+}
+
+/* Navigation Bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 20%;
+}
+
+/* Navigation Bar: Logo And Image */
+.logo {
+  margin: inherit;
+}
+
+.logo img {
+  height: 10rem;
+  margin: inherit;
+}
+
+/* Navigation Bar: List Styling */
+#navbar::before {
+  content: "";
+  background-color: #C9CCD5;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.70;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+#navbar ul li a {
+  color: black;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: #FEF5ED;
+  background-color: #E26A2C;
+}
+
+/* HOME section */
+#Home {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 200px;
+  height: 666px;
+  justify-content: center;
+  align-items: center;
+}
+
+#Home::before {
+  content: "";
+  background-image: url("images/bg.jpg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.32;
+}
+
+#Home h1 {
+  color: #191A19;
+  text-align: center;
+}
+
+#Home p {
+  color: #3D0000;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+}
+
+/* Menu Section */
+#menus1 {
+  margin: 34px;
+  display: flex;
+}
+
+#menus1 .menu-box {
+  border: 2px solid brown;
+  padding: 30px;
+  margin: 3px 6px;
+  border-radius: 25px;
+  background-color: #EEEEEE;
+  display: block;
+}
+
+#menus1 .menu-box img {
+  height: 222px;
+  margin: 0px;
+  display: block;
+  align-items: center;
+  transition: 1s;
+}
+
+#menus2 {
+  margin: 34px;
+  display: flex;
+}
+
+#menus2 .menu-box {
+  border: 2px solid brown;
+  padding: 30px;
+  margin: 3px 6px;
+  border-radius: 25px;
+  background-color: #EEEEEE;
+  display: block;
+}
+
+#menus2 .menu-box img {
+  height: 221px;
+  margin: 0px;
+  display: block;
+  align-items: center;
+}
+
+#menus3 {
+  margin: 34px;
+  display: flex;
+}
+
+#menus3 .menu-box {
+  border: 2px solid brown;
+  padding: 30px;
+  margin: 3px 6px;
+  border-radius: 25px;
+  background-color: #EEEEEE;
+  display: block;
+}
+
+#menus3 .menu-box img {
+  height: 178px;
+  margin: 0px;
+  display: block;
+  align-items: center;
+  transition: 1s;
+}
+
+.menu-box:hover{
+  transform: scale(1.3);
+}
+/* Services Section */
+#services {
+  margin: 34px;
+  display: flex;
+}
+
+#services .box {
+  border: 2px solid brown;
+  padding: 30px;
+  margin: 3px 6px;
+  border-radius: 25px;
+  background-color: #EEEEEE;
+  display: block;
+}
+
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+#services .box p {
+  font-family: 'Shippori Antique B1', sans-serif;
+  padding: initial;
+}
+
+/* Customer Section */
+#customer-setion {
+  height: 344px;
+}
+
+#customer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#customer img {
+  height: 200px;
+}
+
+.customer-item {
+  padding: 20px;
+}
+
+/* Contact Section */
+#contact{
+  position: relative;
+}
+
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-image: url("images/contactus.jpg");
+
+}
+
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+#contact-box form{
+  width: 40%;
+}
+
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 2em;
+  padding: 40px;
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 0px;
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.btn {
+  padding: 3px 20px;
+  border: 2px solid black;
+  background-color: #DF711B;
+  margin: 30px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: #630000;
+  background-color: #D8B6A4;
+}
+
+.center {
+  text-align: center;
+}
